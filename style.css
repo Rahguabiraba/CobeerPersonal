@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #f2c025;
+}
+
+#top div {
+  position: fixed;
+}
+
+#liquid .bubble {
+  animation-name: bubble;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-color: #fff;
+  bottom: 0;
+  border-radius: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+@keyframes bubble {
+  0% {
+    bottom: 0;
+  }
+
+  50% {
+    background-color: #fff;
+    bottom: 150px;
+  }
+
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+    bottom: 500px;
+  }
+}
+
+/* BURBUJAS */
+.bubble1 {
+  left: 10px;
+  animation-delay: 1000ms;
+  animation-duration: 1000ms;
+}
+
+.bubble2 {
+  left: 100px;
+  animation-delay: 700ms;
+  animation-duration: 1100ms;
+}
+
+.bubble3 {
+  left: 200px;
+  animation-delay: 1200ms;
+  animation-duration: 1300ms;
+}
+
+.bubble4 {
+  left: 300px;
+  animation-delay: 1100ms;
+  animation-duration: 700ms;
+}
+
+.bubble5 {
+  left: 400px;
+  animation-delay: 1300ms;
+  animation-duration: 800ms;
+}
+
+.bubble6 {
+  right: 10px;
+  animation-delay: 1000ms;
+  animation-duration: 1000ms;
+}
+
+.bubble7 {
+  right: 100px;
+  animation-delay: 700ms;
+  animation-duration: 1100ms;
+}
+
+.bubble8 {
+  right: 200px;
+  animation-delay: 1200ms;
+  animation-duration: 1300ms;
+}
+
+.bubble9 {
+  right: 300px;
+  animation-delay: 1100ms;
+  animation-duration: 700ms;
+}
+
+.bubble10 {
+  right: 450px;
+  animation-delay: 1300ms;
+  animation-duration: 800ms;
+}
+
+.bubble11 {
+  right: 460px;
+  animation-delay: 1000ms;
+  animation-duration: 1000ms;
+}
+
+.bubble12 {
+  right: 530px;
+  animation-delay: 700ms;
+  animation-duration: 1100ms;
+}
+
+.bubble13 {
+  right: 600px;
+  animation-delay: 1200ms;
+  animation-duration: 1300ms;
+}
+
+.bubble14 {
+  right: 640px;
+  animation-delay: 1100ms;
+  animation-duration: 700ms;
+}
+
+.bubble15 {
+  right: 700px;
+  animation-delay: 1300ms;
+  animation-duration: 800ms;
+}
+/* BURBUJAS DEL HEEADER */
+.beer-foam {
+  bottom: 10px;
+  height: 180px;
+}
+
+.foam-1,
+.foam-2,
+.foam-3,
+.foam-4,
+.foam-5,
+.foam-6,
+.foam-7,
+.foam-8,
+.foam-9,
+.foam-10,
+.foam-11,
+.foam-12,
+.foam-13,
+.foam-14,
+.foam-15 {
+  float: left;
+  position: absolute;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #fefefe;
+}
+.foam-1 {
+  top: -30px;
+  left: -10px;
+}
+.foam-2 {
+  top: -35px;
+  left: 20px;
+}
+.foam-3 {
+  top: -25px;
+  left: 50px;
+}
+.foam-4 {
+  top: -35px;
+  left: 80px;
+}
+.foam-5 {
+  top: -30px;
+  left: 110px;
+}
+.foam-6 {
+  top: -20px;
+  left: 140px;
+}
+.foam-7 {
+  top: -30px;
+  left: 160px;
+}
+
+.foam-8 {
+  top: -30px;
+  left: 170px;
+}
+.foam-9 {
+  top: -35px;
+  left: 170px;
+}
+.foam-10 {
+  top: -25px;
+  left: 210px;
+}
+.foam-11 {
+  top: -35px;
+  left: 250px;
+}
+.foam-12 {
+  top: -30px;
+  left: 270px;
+}
+.foam-13 {
+  top: -20px;
+  left: 300px;
+}
+.foam-14 {
+  top: -30px;
+  left: 340px;
+}
+
+.foam-15 {
+  top: -30px;
+  left: 385px;
+}
+
+/*BUSCADOR*/
+.box {
+  position: relative;
+}
+
+.input {
+  margin: 30px;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: 4px solid #ffffff;
+  border-radius: 50px;
+  box-sizing: border-box;
+  font-family: "16023 futuran", sans-serif;
+  font-size: 26px;
+  color: #ffffff;
+  outline: none;
+  transition: 0.5s;
+}
+.box:hover input {
+  width: 350px;
+  background: #6b5410;
+  border-radius: 10px;
+}
+
+.buscador {
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+  width: 30px;
+  height: 30px;
+}
+.buscador:hover {
+  opacity: 0;
+  z-index: -1;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*GRUPO DE CERVEZAS*/
+#cerveza-group {
+  display: grid;
+  grid-template-areas: 
+  'cerveza1 cerveza2 cerveza3'
+  'cerveza4 cerveza5 cerveza6'
+  'cerveza7 cerveza8 cerveza9';
+  gap: 10px;
+}
+
+#cerveza1 {
+  grid-area: cerveza1;
+}
+
+#cerveza2 {
+  grid-area: cerveza2;
+}
+
+#cerveza3 {
+  grid-area: cerveza3;
+}
+
+#cerveza4 {
+  grid-area: cerveza4;
+}
+
+#cerveza5 {
+  grid-area: cerveza5;
+}
+
+#cerveza6 {
+  grid-area: cerveza6;
+}
+
+#cerveza7 {
+  grid-area: cerveza7;
+}
+
+#cerveza8 {
+  grid-area: cerveza8;
+}
+
+#cerveza9 {
+  grid-area: cerveza9;
+}
+
+.cerveza {
+  transform-style: preserve-3d;
+  transition: transform 200ms ease-out 0s;
+  transform: scaleX(0.95) scaleY(0.95) scaleZ(1);
+  background-color: #ffffff;
+}
+
+.cardview {
+  grid-area: cardview;
+  padding-top: 18px;
+  padding-bottom: 8px;
+  font-family: 'Catamaran';
+  font-size: 8px;
+  font-weight: 400;
+  color: #336072;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.cardview:hover {
+  transform: rotateY(180deg);
+}
+
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
