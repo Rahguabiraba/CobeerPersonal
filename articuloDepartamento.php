@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Articulo Departamento</title>
     <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -19,7 +19,7 @@
     </header>
 
     <main>
-        <?php include "components/loginForm/component.php" ?>
+        <?php include "components/articuloDepartamento/component.php" ?>
     </main>
 
     <footer>

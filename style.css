@@ -338,7 +338,7 @@ main {
   text-transform: uppercase;
 }
 
-.cardview:hover {
+.cerveza:hover {
   transform: rotateY(180deg);
 }
 

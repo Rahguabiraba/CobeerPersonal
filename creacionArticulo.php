@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,23 @@
     <title>Creacion Articulo</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-     <!--Body background-->
-     <?php include "components/body/component.php" ?>
+    <!--Body background-->
+    <?php include "components/body/component.php" ?>
 
-<header>
-    <?php include "components/header/component.php" ?>
-</header>
+    <header>
+        <?php include "components/header/component.php" ?>
+    </header>
 
-<main>
-    <?php include "components/creacionArticulo/component.php" ?>
-</main>
-    
+    <main>
+        <?php include "components/creacionArticulo/component.php" ?>
+    </main>
+
+    <footer>
+        <?php include "components/footer/component.php" ?>
+    </footer>
+
 </body>
+
 </html>

@@ -1,0 +1,318 @@
+/* La imagen de articulo  */
+.img_articulo_departamento {
+  display: block;
+  margin: auto;
+  width: 360px;
+  transition: all .80s ease-in-out;
+}
+
+.img_articulo_departamento:hover {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  box-shadow: 0px 0px 15px 15px #ec731e;
+  -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+
+}
+.divh2 {
+  text-align: center;
+}
+
+/* articulo dos  */
+.articuloDos{
+  border-radius:30px ;
+  border-top:20px  solid rgba(52, 52, 52, 0.471);
+  border-right:20px  solid rgba(52, 52, 52, 0.471);
+  border-bottom:20px  solid rgba(52, 52, 52, 0.471);
+  max-width: 350px;
+  padding: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+} 
+
+/* contenido de articulos donde pongo los articule  */
+.contenido_articulo_departament {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-self: center;
+  align-items: center;
+  padding: 30px;
+  border-radius: 5px;
+}
+/* los articles dentro de contenido de articulos */
+.contenido_articulo_departament > :nth-child(1)  {
+  width: 30%;
+  margin-left: 30%;
+}
+/* las tags  */
+
+.tag {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* encabezado 
+ */
+ h2{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.038);
+  text-shadow: 2px 5px 7px  black;
+  margin-bottom:20px;
+  padding: 5px 5px 0 5px ;
+  border-radius: 2px;
+}
+
+.main-content {
+  overflow: hidden;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+
+  height: 80vh;
+
+  background: linear-gradient(to right, #ffa74c, #ffa74c, #ffa74c);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 100px 100px 160px 160px;
+  border-bottom: 80px;
+  border-top: 80px solid white;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.vignette {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0px 0px 150px 20px rgba(0, 0, 0, 0.574);
+  -webkit-animation: vignette-anim 3s infinite; /* Safari 4+ */
+  -moz-animation: vignette-anim 3s infinite; /* Fx 5+ */
+  -o-animation: vignette-anim 3s infinite; /* Opera 12+ */
+  animation: vignette-anim 3s infinite; /* IE 10+, Fx 29+ */
+}
+
+.noise {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  pointer-events: none;
+  opacity: .15;
+}
+
+.titleCont {
+  position: relative;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.038);
+  border-radius: 20px;
+}
+
+@-webkit-keyframes vignette-anim {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+@-moz-keyframes vignette-anim {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+@-o-keyframes vignette-anim {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+@keyframes vignette-anim {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+
+/* burbujas */
+
+.titulo {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin-top: -5vh;
+  animation: flotear 2s linear infinite alternate;
+  z-index: 5;
+}
+@keyframes flotear {
+  to{
+    margin-top: -10vh;
+  } 
+ }
+
+
+.burbujas div{
+  background-color: #e99846;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 0;
+  animation: animarburbujas 4s linear infinite;
+  z-index: 1;
+}
+.burbujas div:nth-child(1){
+ width: 35px;
+ height: 32px;
+ left: 40px;
+ animation-duration: 4s ;
+}
+.burbujas div:nth-child(2){
+  width: 45px;
+  height: 32px;
+  left: 30%;
+  animation-duration: 8s;
+
+}
+.burbujas div:nth-child(3){
+  width: 55px;
+  height: 32px;
+  left: 40%;
+  animation-duration: 5s ;
+
+}
+.burbujas div:nth-child(4){
+ width: 65px;
+ height: 60px;
+ left: 50%;
+ animation-duration: 10s;
+}
+.burbujas div:nth-child(5){
+  width: 55px;
+  height: 50px;
+  left: 65%;
+  animation-duration: 6.5s ;
+
+}
+.burbujas div:nth-child(6){
+  width: 50px;
+  height: 48px;
+  left: 80%;
+  animation-duration: 7s;
+}
+.burbujas div:nth-child(7){
+  width: 55px;
+  height: 48px;
+  left: 95%;
+  animation-duration: 9s ;
+
+}
+/* secunada  */
+.burbujas div:nth-child(8){
+  width: 35px;
+  height: 32px;
+  left: 10px;
+  animation-duration: 3s ;
+ }
+ .burbujas div:nth-child(9){
+   width: 45px;
+   height: 32px;
+   left: 20%;
+   animation-duration: 7s;
+ 
+ }
+ .burbujas div:nth-child(10){
+   width: 55px;
+   height: 32px;
+   left: 30%;
+   animation-duration: 5.5s ;
+ 
+ }
+ .burbujas div:nth-child(11){
+  width: 65px;
+  height: 60px;
+  left: 40%;
+  animation-duration: 6.1s;
+ }
+ .burbujas div:nth-child(12){
+   width: 55px;
+   height: 50px;
+   left: 66%;
+   animation-duration: 2.5s ;
+ 
+ }
+ .burbujas div:nth-child(13){
+   width: 50px;
+   height: 48px;
+   left: 77%;
+   animation-duration: 7.60s;
+ }
+ .burbujas div:nth-child(14){
+   width: 55px;
+   height: 48px;
+   left: 100%;
+   animation-duration: 9.1s ;
+ 
+ }
+
+@keyframes animarburbujas{
+0%{
+  width: 0;
+  height: 0;
+}
+3%{
+  width: 30px;
+  height: 27px;
+}
+50%{
+  opacity: 0.5;
+  margin-left: 20px;
+}  
+100%{
+  transform: rotate(90deg);
+  bottom: 100vh;
+  background-color: rgb(254, 254, 254);
+
+}  
+}
+
+
+/* Boton 
+ */
+ .boton_burbuja{
+  padding: 15px;
+  border-radius: 100%;
+  background-color: #e99846;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+
+ }
+ .boton_burbuja:hover{
+  background-color: rgba(0, 0, 0, 0.018);
+  color: #e99846;
+ }
+ .tag{
+  margin: 50px;
+ }
+
+
+
+ 

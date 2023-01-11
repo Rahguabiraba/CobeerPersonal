@@ -20,7 +20,10 @@
     <main>
         <?php include "components/control/component.php" ?>
     </main>
-    
+
+    <footer>
+        <?php include "components/footer/component.php" ?>
+    </footer>
 </body>
 
 </html>

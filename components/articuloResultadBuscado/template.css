@@ -1,0 +1,89 @@
+/* Tarjeta wrap  */
+
+.wrap{
+  max-width:1200px;
+  margin: 50px auto;
+  justify-content:center;
+  background-color: orange;  
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow:row wrap;
+  flex-flow: row wrap;
+  font-weight: bold;
+  border-radius: 20px;
+
+  box-shadow:  0 0 8px 12px silver;
+}
+
+.tarjeta_wrap{
+  margin: 10px;
+  -webkit-perspective: 400;
+  perspective: 400;
+  background-color: #ffa500;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  -webkit-box-shadow: 12px 12px 30px -11.9px #e39f21b9, inset 0px 0px 2px 0px orange;
+  -moz-box-shadow: 12px 12px 30px -11.9px #e39f21b9, inset 0px 0px 2px 0px orange;
+  box-shadow: 12px 12px 30px -11.9px #e39f21b9, inset 0px 0px 2px 0px orange;
+ 
+}
+.tarjeta{
+  width: 350px;
+  height:300px;
+  background-color: aquamarine;
+  position: relative;
+  transform-style:preserve-3d;
+  transition:.7s  ease;
+  border: none;
+  -webkit-box-shadow: 12px 12px 30px -11.9px rgba(251, 60, 96, 0.35), inset 0px 0px 2px 0px rgba(94, 37, 37, 0.3);
+  -moz-box-shadow: 12px 12px 30px -11.9px rgba(251, 60, 96, 0.35), inset 0px 0px 2px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 12px 12px 30px -11.9px rgba(251, 60, 96, 0.35), inset 0px 0px 2px 0px rgba(0, 0, 0, 0.3);
+ 
+}
+.adelante, .atras {
+  width: 100%;
+  height:100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.adelante{
+  width:100%;
+
+}
+
+.atras{
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+}
+
+.tarjeta_wrap:hover .tarjeta{
+  transform: rotateY(180deg);
+}
+
+.card1{
+  background: url("https://tutobasico.com/wp-content/uploads/2018/10/encabezadosHtml.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+ /* ********** */
+@media all and (min-width: 600px) {
+  .wrap{
+    display: flex;
+    flex-wrap: wrap
+  }
+
+}
+

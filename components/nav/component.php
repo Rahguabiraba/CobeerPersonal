@@ -16,6 +16,8 @@
       <li><a href="login.php">Login</a></li>
       <li><a href="controlAdmins.php">Control Admins</a></li>
       <li><a href="creacionArticulo.php">Creacion Articulo</a></li>
+      <li><a href="buscador.php">Buscador</a></li>
+      <li><a href="articuloDepartamento.php">Articulo Departamento</a></li>
     </ul>
   </nav> 
 </div>
